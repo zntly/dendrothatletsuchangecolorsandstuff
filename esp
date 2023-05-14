@@ -812,7 +812,7 @@ end;
 
 --#region BoundingBox
 function ESPs.BoundingBox:Render()
-    local Thicknes, Opacity, Color = self.Thickness, self.Opacity, self.CurrentColor;
+    local Thicknes, Opacity, Color = self.Thickness, self.Opacity, self.PleaseBecomeThisColor;
     local Box = CreateDrawing("Square");
     Box.Thickness = Thicknes;
     Box.Size = self.Max2DPoint - self.Min2DPoint;
